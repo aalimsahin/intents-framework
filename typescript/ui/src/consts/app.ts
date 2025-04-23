@@ -7,9 +7,9 @@ export const MAIN_FONT = SpaceGrotesk({
   preload: true,
   fallback: ['sans-serif'],
 });
-export const APP_NAME = 'Open Intents Framework';
+export const APP_NAME = 'Alim Intents';
 export const APP_DESCRIPTION = 'Intents For Everyone, With Everyone';
-export const APP_URL = 'app.openintents.xyz';
+export const APP_URL = 'aalimsah.in';
 export const BRAND_COLOR = Color.primary;
 export const BACKGROUND_COLOR = Color.primary;
 export const BACKGROUND_IMAGE =

@@ -13,58 +13,16 @@ const metadata: Hyperlane7683Metadata = {
     //   address: "0x5F69f9aeEB44e713fBFBeb136d712b22ce49eb88",
     //   chainName: "ethereum",
     // },
-    // {
-    //   address: "0x9245A985d2055CeA7576B293Da8649bb6C5af9D0",
-    //   chainName: "optimism",
-    // },
-    // {
-    //   address: "0x9245A985d2055CeA7576B293Da8649bb6C5af9D0",
-    //   chainName: "arbitrum",
-    // },
-    // {
-    //   address: "0x9245A985d2055CeA7576B293Da8649bb6C5af9D0",
-    //   chainName: "base",
-    // },
-    // {
-    //   address: "0x9245A985d2055CeA7576B293Da8649bb6C5af9D0",
-    //   chainName: "gnosis",
-    // },
-    // {
-    //   address: "0x9245A985d2055CeA7576B293Da8649bb6C5af9D0",
-    //   chainName: "berachain",
-    // },
-    // {
-    //   address: "0x9245A985d2055CeA7576B293Da8649bb6C5af9D0",
-    //   chainName: "form",
-    // },
-    // {
-    //   address: "0x9245A985d2055CeA7576B293Da8649bb6C5af9D0",
-    //   chainName: "unichain",
-    // },
-    // {
-    //   address: "0x9245A985d2055CeA7576B293Da8649bb6C5af9D0",
-    //   chainName: "artela",
-    // },
-
     // testnet
     {
-      address: "0xf614c6bF94b022E16BEF7dBecF7614FFD2b201d3",
+      address: "0x308122DDe8146B23e5F70B0FF1F5d322c45d08aC",
       chainName: "optimismsepolia",
+      initialBlock: 26799250,
     },
     {
-      address: "0xf614c6bF94b022E16BEF7dBecF7614FFD2b201d3",
+      address: "0x308122DDe8146B23e5F70B0FF1F5d322c45d08aC",
       chainName: "arbitrumsepolia",
-    },
-    {
-      address: "0xf614c6bF94b022E16BEF7dBecF7614FFD2b201d3",
-      chainName: "sepolia",
-    },
-    {
-      address: "0xf614c6bF94b022E16BEF7dBecF7614FFD2b201d3",
-      chainName: "basesepolia",
-      initialBlock: 21491220,
-      pollInterval: 1000,
-      confirmationBlocks: 2,
+      initialBlock: 145604418,
     },
   ],
   customRules: {
@@ -73,7 +31,7 @@ const metadata: Hyperlane7683Metadata = {
         name: "filterByTokenAndAmount",
         args: {
           "11155420": {
-            "0x5f94BC7Fb4A2779fef010F96b496cD36A909E818": BigInt(50e18),
+            "0xf3023fcD6307E8883897dF7C86390B886C2A6dfC": BigInt(50e18),
             [AddressZero]: BigInt(5e15),
           },
           "84532": {
@@ -81,7 +39,7 @@ const metadata: Hyperlane7683Metadata = {
             [AddressZero]: BigInt(5e15),
           },
           "421614": {
-            "0xaf88d065e77c8cC2239327C5EDb3A432268e5831": null,
+            "0xf3023fcD6307E8883897dF7C86390B886C2A6dfC": null,
             [AddressZero]: BigInt(5e15),
           },
           "11155111": {

@@ -1,29 +1,29 @@
 import { type WarpCoreConfig } from '@hyperlane-xyz/sdk';
 import { zeroAddress } from 'viem';
 
-const ROUTER = '0xf614c6bF94b022E16BEF7dBecF7614FFD2b201d3';
-const ITT = '0x5f94BC7Fb4A2779fef010F96b496cD36A909E818';
+const ROUTER = '0x308122DDe8146B23e5F70B0FF1F5d322c45d08aC';
+const ITT = '0xf3023fcD6307E8883897dF7C86390B886C2A6dfC';
 
 const NETWORK_SEPARATOR = '101010';
 
 export const TOP_MAX = {
-  'bsesepolia': {
+  bsesepolia: {
     [ITT]: 100e18,
     [zeroAddress]: 1e16,
   },
-  'optimismsepolia': {
+  optimismsepolia: {
     [ITT]: 100e18,
     [zeroAddress]: 1e16,
   },
-  'arbitrumsepolia': {
+  arbitrumsepolia: {
     [ITT]: 100e18,
     [zeroAddress]: 1e16,
   },
-  'sepolia': {
+  sepolia: {
     [ITT]: 100e18,
     [zeroAddress]: 1e16,
   },
-}
+};
 
 // A list of Warp Route token configs
 // These configs will be merged with the warp routes in the configured registry
@@ -36,35 +36,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       collateralAddressOrDenom: ROUTER,
       connections: [
         {
-          token: 'ethereum|basesepolia|' + ITT,
-        },
-        {
           token: 'ethereum|arbitrumsepolia|' + ITT,
-        },
-        {
-          token: 'ethereum|sepolia|' + ITT,
-        },
-      ],
-      decimals: 18,
-      logoURI: '/deployments/warp_routes/ETH/logo.svg',
-      name: 'ITT',
-      standard: 'Intent',
-      symbol: 'ITT',
-      protocol: 'ethereum',
-    },
-    {
-      addressOrDenom: ITT,
-      chainName: 'basesepolia',
-      collateralAddressOrDenom: ROUTER,
-      connections: [
-        {
-          token: 'ethereum|optimismsepolia|' + ITT,
-        },
-        {
-          token: 'ethereum|arbitrumsepolia|' + ITT,
-        },
-        {
-          token: 'ethereum|sepolia|' + ITT,
         },
       ],
       decimals: 18,
@@ -81,34 +53,6 @@ export const warpRouteConfigs: WarpCoreConfig = {
       connections: [
         {
           token: 'ethereum|optimismsepolia|' + ITT,
-        },
-        {
-          token: 'ethereum|basesepolia|' + ITT,
-        },
-        {
-          token: 'ethereum|sepolia|' + ITT,
-        },
-      ],
-      decimals: 18,
-      logoURI: '/deployments/warp_routes/ETH/logo.svg',
-      name: 'ITT',
-      standard: 'Intent',
-      symbol: 'ITT',
-      protocol: 'ethereum',
-    },
-    {
-      addressOrDenom: ITT,
-      chainName: 'sepolia',
-      collateralAddressOrDenom: ROUTER,
-      connections: [
-        {
-          token: 'ethereum|optimismsepolia|' + ITT,
-        },
-        {
-          token: 'ethereum|arbitrumsepolia|' + ITT,
-        },
-        {
-          token: 'ethereum|basesepolia|' + ITT,
         },
       ],
       decimals: 18,
@@ -124,35 +68,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       collateralAddressOrDenom: ROUTER,
       connections: [
         {
-          token: 'ethereum|basesepolia|' + zeroAddress,
-        },
-        {
           token: 'ethereum|arbitrumsepolia|' + zeroAddress,
-        },
-        {
-          token: 'ethereum|sepolia|' + zeroAddress,
-        },
-      ],
-      decimals: 18,
-      logoURI: '/deployments/warp_routes/ETH/logo.svg',
-      name: 'ETH',
-      standard: 'IntentNative',
-      symbol: 'ETH',
-      protocol: 'ethereum',
-    },
-    {
-      addressOrDenom: zeroAddress,
-      chainName: 'basesepolia',
-      collateralAddressOrDenom: ROUTER,
-      connections: [
-        {
-          token: 'ethereum|optimismsepolia|' + zeroAddress,
-        },
-        {
-          token: 'ethereum|arbitrumsepolia|' + zeroAddress,
-        },
-        {
-          token: 'ethereum|sepolia|' + zeroAddress,
         },
       ],
       decimals: 18,
@@ -169,34 +85,6 @@ export const warpRouteConfigs: WarpCoreConfig = {
       connections: [
         {
           token: 'ethereum|optimismsepolia|' + zeroAddress,
-        },
-        {
-          token: 'ethereum|basesepolia|' + zeroAddress,
-        },
-        {
-          token: 'ethereum|sepolia|' + zeroAddress,
-        },
-      ],
-      decimals: 18,
-      logoURI: '/deployments/warp_routes/ETH/logo.svg',
-      name: 'ETH',
-      standard: 'IntentNative',
-      symbol: 'ETH',
-      protocol: 'ethereum',
-    },
-    {
-      addressOrDenom: zeroAddress,
-      chainName: 'sepolia',
-      collateralAddressOrDenom: ROUTER,
-      connections: [
-        {
-          token: 'ethereum|optimismsepolia|' + zeroAddress,
-        },
-        {
-          token: 'ethereum|arbitrumsepolia|' + zeroAddress,
-        },
-        {
-          token: 'ethereum|basesepolia|' + zeroAddress,
         },
       ],
       decimals: 18,
