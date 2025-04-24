@@ -21,7 +21,6 @@
     "typescript/solver",
     "solidity"
   ],
-  "packageManager": "yarn@4.5.1",
   "devDependencies": {
     "@changesets/cli": "^2.27.12"
   }
