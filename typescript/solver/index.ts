@@ -7,9 +7,14 @@ import { log } from "./logger.js";
 import { SolverManager } from "./solvers/SolverManager.js";
 import { getMultiProvider } from "./solvers/utils.js";
 
+import express, { Request, Response } from "express";
+
+const app = express();
+const port = 3000;
+
 const main = async () => {
   const multiProvider = await getMultiProvider(chainMetadata).catch(
-    (error) => (log.error(error.reason ?? error.message), process.exit(1))
+    (error) => (log.error(error.reason ?? error.message), process.exit(1)),
   );
 
   log.info("🙍 Intent Solver 📝");
@@ -37,6 +42,16 @@ const main = async () => {
     log.error("Failed to initialize solvers:", error);
     process.exit(1);
   }
+
+  app.get("/health", (req: Request, res: Response) => {
+    res.status(200).json({
+      message: "API is running and healthy!",
+    });
+  });
+
+  app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+  });
 };
 
 await main();
