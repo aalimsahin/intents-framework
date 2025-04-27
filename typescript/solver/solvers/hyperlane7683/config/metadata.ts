@@ -17,12 +17,12 @@ const metadata: Hyperlane7683Metadata = {
     {
       address: "0x308122DDe8146B23e5F70B0FF1F5d322c45d08aC",
       chainName: "optimismsepolia",
-      initialBlock: 26837728,
+      initialBlock: 26992167,
     },
     {
       address: "0x308122DDe8146B23e5F70B0FF1F5d322c45d08aC",
       chainName: "arbitrumsepolia",
-      initialBlock: 145920401,
+      initialBlock: 147141758,
     },
   ],
   customRules: {
